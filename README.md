@@ -1,56 +1,34 @@
-# Atelier Sonia
+# Atelier Sonia — Sito web
 
-Prototipo di vetrina virtuale per piccola oggettistica firmata, dedicata a una persona speciale e a occasioni speciali (anniversari, compleanni, matrimoni, ricorrenze e ringraziamenti).
-
-## Descrizione
-
-Atelier Sonia è una web app React con un'estetica editoriale e minimalista ispirata ai principi del design di lusso:
-
-- palette neutra e desaturata (avorio, sabbia, tortora, pietra);
-- spazio negativo abbondante e tipografia serif per i titoli;
-- intestazione con effetto "frosted glass" (blur e traslucenza);
-- animazioni lente e discrete (framer-motion);
-- vetrina virtuale con filtri per occasione;
-- borsa virtuale (carrello) con aggiunta e rimozione articoli, senza pagamenti attivi.
-
-## Stack
-
-- [React](https://react.dev/) 18
-- [Vite](https://vitejs.dev/)
-- [Tailwind CSS](https://tailwindcss.com/) 4
-- [framer-motion](https://motion.dev/)
-
-## Avvio del progetto
-
-```bash
-npm install
-npm run dev
-```
-
-L'applicazione sarà disponibile all'indirizzo indicato nel terminale (di norma http://localhost:5173).
-
-## Build di produzione
-
-```bash
-npm run build
-npm run preview
-```
+Sito web statico completo per Atelier Sonia: piccola oggettistica firmata e regali per persone speciali e occasioni speciali.
 
 ## Struttura
 
-```
-atelier-sonia/
-├── index.html
-├── package.json
-├── vite.config.js
-└── src/
-    ├── main.jsx
-    ├── index.css
-    └── App.jsx
-```
+L'intero sito è contenuto in un unico file autonomo:
+
+- `index.html` — documento HTML completo con CSS e JavaScript inline (nessuna dipendenza da build, npm o bundler).
+
+## Sezioni del sito
+
+- Hero con parallasse e invito all'azione.
+- Dichiarazione (statement) e filosofia del brand, con storia, firma della fondatrice e valori.
+- Vetrina con 12 prodotti, filtri per categoria (Casa, Scrivania, Persona, Confezioni) e contatore oggetti.
+- Sezione Occasioni, Approccio (metodo in 4 fasi), Ambiente dell'atelier e citazioni.
+- Contatti con modulo (demo) e sezione prenotazione su appuntamento.
+- Carrello virtuale (drawer laterale) con quantità, rimozione articoli, subtotale e toast di conferma.
+- Menu mobile, animazioni reveal allo scroll, barra di navigazione con effetto frosted glass, supporto `prefers-reduced-motion`.
+
+## Note tecniche
+
+- Tipografia: Cormorant Garamond e Jost via Google Fonts; immagini da Unsplash. Il sito richiede una connessione internet per caricare questi asset esterni.
+- Il carrello e il modulo contatti sono dimostrativi: nessun pagamento e nessun invio dati sono attivi.
+- Il sito è pronto per il deployment statico: GitHub Pages, Netlify, Vercel o Cloudflare Pages, senza alcuna build.
+
+## Avvio locale
+
+Aprire semplicemente `index.html` in un browser.
 
 ## Note
 
-- Le immagini dei prodotti sono segnaposto in tinte neutre: sostituirle con fotografie editoriali reali.
-- La borsa è virtuale: nessun pagamento è attivo. Il prototipo è predisposto per il futuro collegamento a un backend e-commerce (Shopify headless oppure Medusa con Stripe).
 - Marchio e contenuti sono originali; il progetto non utilizza materiale di terze parti.
+- Evoluzione futura possibile: collegamento del carrello a un backend e-commerce reale (Shopify headless o Medusa con Stripe).
