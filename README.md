@@ -1,34 +1,25 @@
-# Atelier Sonia — Sito web
+# Atelier Sonia
 
-Sito web statico completo per Atelier Sonia: piccola oggettistica firmata e regali per persone speciali e occasioni speciali.
+Sito web statico di Atelier Sonia, boutique di piccola ogettistica firmata per la persona speciale e per occasioni speciali. Stile editoriale di lusso minimal (palette avorio/carbone/oro, tipografia Cormorant Garamond + Jost), ispirato al linguaggio estetico dei siti fashion di alta gamma.
 
-## Struttura
+## Struttura del repository
 
-L'intero sito è contenuto in un unico file autonomo:
+- `index.html` — versione italiana completa (file singolo autonomo: HTML, CSS e JavaScript inline).
+- `en.html` — versione inglese completa (file singolo autonomo, stessa struttura).
+- `README.md` — questo documento.
+- `.gitignore` — esclusioni per lo sviluppo locale.
 
-- `index.html` — documento HTML completo con CSS e JavaScript inline (nessuna dipendenza da build, npm o bundler).
+## Caratteristiche
 
-## Sezioni del sito
+- Sezioni: hero, dichiarazione, filosofia, storia, valori, vetrina con 12 prodotti, occasioni, approccio, metodo, atelier, ambiente, citazione, contatti con modulo, prenotazione su appuntamento, footer.
+- Selettore lingua IT/EN nel menu di navigazione (desktop e mobile) che collega `index.html` ed `en.html`.
+- Shop vetrina virtuale con filtri per categoria e carrello virtuale (aggiunta, quantità, rimozione, subtotale, persistenza in `localStorage`).
+- Animazioni allo scroll, barra di navigazione con effetto glass, layout completamente responsive, supporto `prefers-reduced-motion`.
 
-- Hero con parallasse e invito all'azione.
-- Dichiarazione (statement) e filosofia del brand, con storia, firma della fondatrice e valori.
-- Vetrina con 12 prodotti, filtri per categoria (Casa, Scrivania, Persona, Confezioni) e contatore oggetti.
-- Sezione Occasioni, Approccio (metodo in 4 fasi), Ambiente dell'atelier e citazioni.
-- Contatti con modulo (demo) e sezione prenotazione su appuntamento.
-- Carrello virtuale (drawer laterale) con quantità, rimozione articoli, subtotale e toast di conferma.
-- Menu mobile, animazioni reveal allo scroll, barra di navigazione con effetto frosted glass, supporto `prefers-reduced-motion`.
+## Utilizzo
 
-## Note tecniche
+Aprire `index.html` (italiano) o `en.html` (inglese) direttamente in un browser: non è richiesto alcun processo di build o server. Le immagini sono ospitate su Unsplash e richiedono una connessione internet.
 
-- Tipografia: Cormorant Garamond e Jost via Google Fonts; immagini da Unsplash. Il sito richiede una connessione internet per caricare questi asset esterni.
-- Il carrello e il modulo contatti sono dimostrativi: nessun pagamento e nessun invio dati sono attivi.
-- Il sito è pronto per il deployment statico: GitHub Pages, Netlify, Vercel o Cloudflare Pages, senza alcuna build.
+## Pubblicazione
 
-## Avvio locale
-
-Aprire semplicemente `index.html` in un browser.
-
-## Note
-
-- Marchio e contenuti sono originali; il progetto non utilizza materiale di terze parti.
-- Evoluzione futura possibile: collegamento del carrello a un backend e-commerce reale (Shopify headless o Medusa con Stripe).
+Ospitare il file `index.html` su un qualunque servizio di hosting statico (GitHub Pages, Netlify, Cloudflare Pages) selezionando il ramo `main` come sorgente.
