@@ -221,6 +221,26 @@ h3.display{ font-size:clamp(1.4rem,2.2vw,1.95rem); line-height:1.18; }
 .nav.scrolled .nav-cta{ border-color:var(--charcoal); color:var(--charcoal); }
 .nav.scrolled .nav-cta:hover{ background:var(--charcoal); color:var(--ivory); }
 
+/* Language switch button */
+.lang-btn{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  font-size:0.66rem;
+  letter-spacing:0.24em;
+  text-transform:uppercase;
+  font-weight:400;
+  padding:13px 20px;
+  border:1px solid rgba(250,247,242,.45);
+  color:var(--ivory);
+  transition:all .6s var(--ease);
+  white-space:nowrap;
+}
+.lang-btn svg{ flex-shrink:0; }
+.lang-btn:hover{ background:var(--ivory); color:var(--charcoal); border-color:var(--ivory); }
+.nav.scrolled .lang-btn{ border-color:var(--charcoal); color:var(--charcoal); }
+.nav.scrolled .lang-btn:hover{ background:var(--charcoal); color:var(--ivory); }
+
 /* Cart button */
 .cart-btn{
   position:relative;
@@ -1466,7 +1486,7 @@ h3.display{ font-size:clamp(1.4rem,2.2vw,1.95rem); line-height:1.18; }
 }
 
 @media (max-width:940px){
-  .nav-links,.nav-cta{ display:none; }
+  .nav-links,.nav-cta,.lang-btn{ display:none; }
   .burger{ display:block; }
   :root{ --nav-h:76px; }
   .shop-note{ grid-template-columns:1fr; gap:2rem; }
@@ -1532,6 +1552,10 @@ h3.display{ font-size:clamp(1.4rem,2.2vw,1.95rem); line-height:1.18; }
 
   <div class="nav-right">
     <a href="#prenota" class="nav-cta">Su appuntamento</a>
+    <a href="en.html" class="lang-btn" title="Versione inglese" aria-label="Apri il sito in inglese">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2c2.7 3 4 6.4 4 10s-1.3 7-4 10c-2.7-3-4-6.4-4-10s1.3-7 4-10z"/></svg>
+      <span>English</span>
+    </a>
 
     <button class="cart-btn" id="cartBtn" aria-label="Apri il carrello">
       <span class="cart-icon">
@@ -1556,6 +1580,7 @@ h3.display{ font-size:clamp(1.4rem,2.2vw,1.95rem); line-height:1.18; }
   <a href="#occasioni">Occasioni</a>
   <a href="#atelier">Atelier</a>
   <a href="#contatti">Contatti</a>
+  <a href="en.html">English</a>
   <a href="#prenota" class="mm-cta">Su appuntamento</a>
 </div>
 
